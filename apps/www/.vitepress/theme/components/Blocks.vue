@@ -12,9 +12,11 @@ import PageHeaderHeading from '../components/PageHeaderHeading.vue'
 import BlockContainer from './BlockContainer.vue'
 import BlocksNav from './BlocksNav.vue'
 
-const FEATURED_BLOCKS = ['Sidebar07', 'Sidebar03', 'Login03', 'Login04']
+const FEATURED_BLOCKS = ['Sidebar07', 'Sidebar03', 'Login03', 'Login04', 'Hero01']
 
 const { params } = useData()
+
+console.log('params', params.value)
 
 const blocks = computed(() => {
   if (params.value === undefined) {

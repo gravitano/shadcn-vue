@@ -19,7 +19,7 @@ const DEPENDENCIES = new Map<string, string[]>([
 ])
 
 const REGISTRY_DEPENDENCY = '@/'
-const CATEGORIES = ['authentication', 'sidebar', 'login', 'dashboard']
+const CATEGORIES = ['authentication', 'sidebar', 'login', 'dashboard', 'hero']
 
 type ArrayItem<T> = T extends Array<infer X> ? X : never
 type RegistryItem = ArrayItem<Registry>

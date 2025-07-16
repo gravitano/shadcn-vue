@@ -5429,6 +5429,25 @@ export const Index: Record<string, any> = {
       category: "",
       subcategory: ""
     },
+    "Hero01": {
+      name: "Hero01",
+      description: "",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/blocks/Hero01/page.vue",
+        type: "registry:page",
+        target: "pages/dashboard/index.vue"
+      },{
+        path: "registry/new-york/blocks/Hero01/components/Hero.vue",
+        type: "registry:component",
+        target: ""
+      }],
+      component: () => import("@/registry/new-york/blocks/Hero01/page.vue").then((m) => m.default),
+      source: "",
+      category: "hero",
+      subcategory: ""
+    },
     "Login01": {
       name: "Login01",
       description: "",
@@ -11377,6 +11396,25 @@ export const Index: Record<string, any> = {
       component: () => import("@/registry/default/blocks/DemoSidebarMenuSub.vue").then((m) => m.default),
       source: "",
       category: "",
+      subcategory: ""
+    },
+    "Hero01": {
+      name: "Hero01",
+      description: "",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/blocks/Hero01/page.vue",
+        type: "registry:page",
+        target: "pages/dashboard/index.vue"
+      },{
+        path: "registry/default/blocks/Hero01/components/Hero.vue",
+        type: "registry:component",
+        target: ""
+      }],
+      component: () => import("@/registry/default/blocks/Hero01/page.vue").then((m) => m.default),
+      source: "",
+      category: "hero",
       subcategory: ""
     },
     "Login01": {

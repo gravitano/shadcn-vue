@@ -395,6 +395,28 @@ export const Index: Record<string, any> = {
       category: "",
       subcategory: ""
     },
+    "Hero01": {
+      name: "Hero01",
+      description: "",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/blocks/Hero01/page.vue",
+        type: "registry:page",
+        target: "pages/dashboard/index.vue",
+        raw: () => import("@/registry/new-york/blocks/Hero01/page.vue?raw").then((m) => m.default)
+      },{
+        path: "registry/new-york/blocks/Hero01/components/Hero.vue",
+        type: "registry:component",
+        target: "",
+        raw: () => import("@/registry/new-york/blocks/Hero01/components/Hero.vue?raw").then((m) => m.default)
+      }],
+      component: () => import("@/registry/new-york/blocks/Hero01/page.vue").then((m) => m.default),
+      raw: () => import("@/registry/new-york/blocks/Hero01/page.vue?raw").then((m) => m.default),
+      source: "",
+      category: "hero",
+      subcategory: ""
+    },
     "Login01": {
       name: "Login01",
       description: "",
@@ -1405,6 +1427,28 @@ export const Index: Record<string, any> = {
       raw: () => import("@/registry/default/blocks/DemoSidebarMenuSub.vue?raw").then((m) => m.default),
       source: "",
       category: "",
+      subcategory: ""
+    },
+    "Hero01": {
+      name: "Hero01",
+      description: "",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/blocks/Hero01/page.vue",
+        type: "registry:page",
+        target: "pages/dashboard/index.vue",
+        raw: () => import("@/registry/default/blocks/Hero01/page.vue?raw").then((m) => m.default)
+      },{
+        path: "registry/default/blocks/Hero01/components/Hero.vue",
+        type: "registry:component",
+        target: "",
+        raw: () => import("@/registry/default/blocks/Hero01/components/Hero.vue?raw").then((m) => m.default)
+      }],
+      component: () => import("@/registry/default/blocks/Hero01/page.vue").then((m) => m.default),
+      raw: () => import("@/registry/default/blocks/Hero01/page.vue?raw").then((m) => m.default),
+      source: "",
+      category: "hero",
       subcategory: ""
     },
     "Login01": {
